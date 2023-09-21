@@ -1,44 +1,32 @@
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  color: rgb(55, 55, 55);
-  font-size: 50px;
+body {
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 255) 40%, rgba(255, 255, 255, 0) 60%),url("../assets/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-/* Navbar.css */
 
 .navbar {
-  background-color: white; /* Example background color */
-  color: white; /* Example text color */
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-container {
+  margin-top: 30vh;
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  padding: 100px; /* Example padding */
 }
 
 .navbar-container img {
-  margin-right: 10px; /* Add spacing between image and text */
+  margin-left: 0px; /* Add spacing between image and text */
+  height: 7.2vw;
 }
 
 .navbar-container h1 {
-  margin-top: 100px;
+    margin-top: 5vh;
+  font-family: "Literata", serif;
+  color: rgb(50, 50, 50);
+  font-size: 5vw;
 }
-
-.color-changing-text {
-  animation: colorChange 10s linear infinite alternate; /* Use the colorChange animation */
-}
-
-@keyframes colorChange {
-  0% {
-    color: #6528F7; /* Start with red color */
-  }
-  50% {
-    color: #A076F9; /* Transition to blue color at 50% of the animation */
-  }
-  100% {
-    color: #1ac189; /* Return to red color at the end of the animation */
-  }
-}
-
