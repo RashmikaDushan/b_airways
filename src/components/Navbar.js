@@ -1,16 +1,31 @@
-import React from "react";
+import { Component } from "react";
 import "./Navbar.css";
-import Icon from "../assets/Icon.png";
+import { MenuItems } from "./MenuItems.js";
 
-function Navbar() {
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <h1>B airways</h1>
-        <img src={Icon} alt="B Airways Logo" />
-      </div>
-    </nav>
-  );
+class Navbar extends Component {
+  state;
+  render() {
+    return (
+      <nav className="NavbarItems">
+        <h1 className="navbar-logo">B Airways</h1>
+        <div className="menu-icons">
+          <i
+            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
+        <ul className="nav-menu" key="nav-menu">
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href={item.url} className={item.cName}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    );
+  }
 }
 
 export default Navbar;

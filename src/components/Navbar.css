@@ -1,32 +1,42 @@
-body {
-  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 255) 40%, rgba(255, 255, 255, 0) 60%),url("../assets/bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+.NavbarItems {
+  /*navigation bar itself*/
   display: flex;
-  justify-content: center;
-}
-
-.navbar {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 0 50px 50px rgba(0, 0, 0, 100);
 }
 
-.navbar-container {
-  margin-top: 30vh;
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-}
-
-.navbar-container img {
-  margin-left: 0px; /* Add spacing between image and text */
-  height: 7.2vw;
-}
-
-.navbar-container h1 {
-    margin-top: 5vh;
+.navbar-logo {
   font-family: "Literata", serif;
-  color: rgb(50, 50, 50);
-  font-size: 5vw;
+  cursor: pointer;
+  font-size: 50px; /*B airways font size*/
+  color: rgb(51, 108, 206); /*B airways font color*/
+  padding: 20px; /*padding top and bottom*/
+  white-space: nowrap;
+}
+
+.nav-menu {
+  /*this makes the top tags makes the horizontal order*/
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  align-items: center;
+  list-style: none; /* removes the dot before the text*/
+}
+
+.nav-links {
+  /* top tags */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  margin-right: 20px; /* spacing between top tags */
+  font-size: 18px;
+  text-decoration: none; /* remove underlines of top tags */
+  color: rgb(86, 86, 86);
+  white-space: nowrap;
+}
+
+.nav-links:hover {
+  transition: all 0.5s ease-in-out;
+  color: rgb(51, 108, 206);
 }
