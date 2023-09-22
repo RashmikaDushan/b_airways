@@ -3,12 +3,15 @@ import "./Navbar.css";
 import { MenuItems } from "./MenuItems.js";
 
 class Navbar extends Component {
-  state;
+  state = { clicked: false };
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
   render() {
     return (
       <nav className="NavbarItems">
         <h1 className="navbar-logo">B Airways</h1>
-        <div className="menu-icons">
+        <div className="menu-icons" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
