@@ -4,8 +4,9 @@ import { RiAccountPinCircleLine } from "react-icons/ri";
 
 function Search() {
   return (
-    <div className="search container section">
+    <div className="search section">
       <div className="sectionContainer grid">
+        <h1 className="header">Search Flight</h1>
         <div className="btns flex">
           <div className="singleBtn">
             <span>Economy</span>
@@ -23,8 +24,8 @@ function Search() {
               <HiOutlineLocationMarker className="icon" />
             </div>
             <div className="texts">
-              <h4>Location</h4>
-              <input type="text" placeholder="Destination"></input>
+              <h4>Depature</h4>
+              <input type="text" placeholder="location"></input>
             </div>
           </div>
           <div className="singleInput flex">
@@ -32,8 +33,8 @@ function Search() {
               <HiOutlineLocationMarker className="icon" />
             </div>
             <div className="texts">
-              <h4>Location</h4>
-              <input type="text" placeholder="Destination"></input>
+              <h4>Destination</h4>
+              <input type="text" placeholder="location"></input>
             </div>
           </div>
           <div className="singleInput flex">
@@ -41,12 +42,12 @@ function Search() {
               <RiAccountPinCircleLine className="icon" />
             </div>
             <div className="texts">
-              <h4>Name</h4>
-              <input type="text" placeholder="Name"></input>
+              <h4>Date</h4>
+              <input type="text" placeholder="DD/MM/YY"></input>
             </div>
           </div>
           <button type="button" className="bttn btnBlock flex">
-            Search Flight
+            Search
           </button>
         </div>
       </div>

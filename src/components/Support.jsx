@@ -2,11 +2,10 @@ import React from "react";
 
 const Support = () => {
   return (
-    <div className="support container section">
-      <div className="secionContainer">
+    <div className="support section">
+      <div className="sectionContainer">
         <div className="titlesDiv">
-          <small>Travel Support</small>
-          <h2>Plan your travel with us</h2>
+          <h2 className="caption">Plan your travel with us...</h2>
           <p>
             Find help with booking and travel plans, see what to expect along
             the journey!
@@ -15,7 +14,9 @@ const Support = () => {
         <div className="infoDiv grid">
           <div className="textDiv grid">
             <div className="singleInfo">
-              <span className="number">01</span>
+              <div className="numberContainer">
+                <span className="number">1</span>
+              </div>
               <h4>Travel requirment for Dubai</h4>
               <p>
                 Find help withooking and travel plans, see what to expect along
@@ -23,7 +24,9 @@ const Support = () => {
               </p>
             </div>
             <div className="singleInfo">
-              <span className="number">02</span>
+              <div className="numberContainer">
+                <span className="number">2</span>
+              </div>
               <h4>Travel requirment for Beijing</h4>
               <p>
                 Find help withooking and travel plans, see what to expect along
@@ -31,7 +34,9 @@ const Support = () => {
               </p>
             </div>
             <div className="singleInfo">
-              <span className="number">03</span>
+              <div className="numberContainer">
+                <span className="number">3</span>
+              </div>
               <h4>Travel requirment for Mumbai</h4>
               <p>
                 Find help withooking and travel plans, see what to expect along

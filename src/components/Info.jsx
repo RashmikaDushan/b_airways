@@ -44,6 +44,11 @@ export class Info extends Component {
                 ticket!
               </p>
             </div>
+          </div>
+          <div className="cardsDiv2 grid">
+            <div>
+              <img src={image} className="singleImage grid" />
+            </div>
             <div>
               <img src={image} className="singleImage grid" />
             </div>

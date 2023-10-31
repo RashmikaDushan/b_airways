@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/icon.png";
+import logo from "../assets/logoNameSmall.png";
 import { TiSocialFacebook } from "react-icons/ti";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
@@ -11,18 +11,17 @@ function Footer() {
     <div className="footer">
       <div className="sectionContainer container grid">
         <div className="gridOne">
-          <div className="logoDiv">
-            <span className="logoName">B Airways</span>
-            <img src={logo} alt="logo" className="logo" />
-          </div>
-          <p>Your mind must be stronger than your feelings!</p>
+          <a href="Home">
+            <img src={logo} alt="logo" className="logoDiv" />
+          </a>
+
           <div className="socialIcon flex">
             <TiSocialFacebook className="icon" />
             <AiOutlineTwitter className="icon" />
             <AiOutlineInstagram className="icon" />
             <MdEmail className="icon" />
           </div>
-        </div>
+        </div>{" "}
         <div className="footerLinks">
           <span className="linkTitle">Information</span>
           <li>
@@ -35,8 +34,14 @@ function Footer() {
             <a href="Home">Travel</a>
           </li>
           <li>
-            <a href="Home">Home</a>
+            <a href="Home">About us</a>
           </li>
+        </div>
+        <div>
+          <div className="quote">
+            Uniting destinations, ensuring seamless journeys for every traveler.
+          </div>
+          <p className="underQuote">Fly with us...</p>
         </div>
       </div>
       <div className="copyrightDiv flex">
